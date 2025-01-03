@@ -18,6 +18,9 @@ class HomeViewmodel extends GetxController {
   RxList todoList = <TodoModel>[].obs;
   RxList filteredTodoList = <TodoModel>[].obs;
   var searchQuery = ''.obs;
+  FocusNode titleFocusNode = FocusNode();
+  FocusNode descriptionFocusNode = FocusNode();
+
   void clearTextFields() {
     todoTitleController.clear();
     todoDescriptionController.clear();

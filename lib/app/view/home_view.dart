@@ -28,6 +28,7 @@ class _HomeViewState extends State<HomeView> {
               child: Padding(
                 padding: const EdgeInsets.symmetric(vertical: 10),
                 child: TextField(
+                  autofocus: true,
                   onChanged: homeViewmodel.searchTodos,
                   decoration: InputDecoration(
                     hintText: 'Search tasks',
