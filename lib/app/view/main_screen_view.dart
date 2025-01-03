@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 
-import '../controller/bottom_nav_controller.dart';
+import '../viewmodel/main_view_model.dart';
 import '../viewmodel/home_viewmodel.dart';
-import 'todo_create_task_modal.dart';
+import '../widgets/todo_create_task_modal.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -14,8 +14,8 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen> {
-  final NavigationController navigationController =
-      Get.find<NavigationController>();
+  final NavigationViewModel navigationController =
+      Get.find<NavigationViewModel>();
 
   final HomeViewmodel homeViewmodel = Get.find<HomeViewmodel>();
 

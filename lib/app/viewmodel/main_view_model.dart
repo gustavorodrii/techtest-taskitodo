@@ -5,7 +5,7 @@ import '../view/create_todo_view.dart';
 import '../view/home_view.dart';
 import '../view/search_todo_view.dart';
 
-class NavigationController extends GetxController {
+class NavigationViewModel extends GetxController {
   RxInt currentIndex = 0.obs;
 
   final List<Widget> pages = [
